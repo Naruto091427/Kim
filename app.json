@@ -1,8 +1,8 @@
 {
-    "name": "Kim Dokja Renamer ",
+    "name": "Kim Dokja Rename ",
     "description": "Telegram File Renamer Bot 2GB",
     "logo": "https://telegra.ph/file/a6e66500b646c12ff02e7-54e9395928eb9d92b2.jpg",
-    "keywords": ["Renamer Bot 2gb", "Mongo DB"],    
+    "keywords": ["Rename Bot 2gb", "Mongo DB"],    
     "repository": "https://github.com/Naruto091427/Dokja-",
     "env": {
         "API_ID": {
