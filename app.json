@@ -1,0 +1,67 @@
+{
+    "name": "Kim Dokja Renamer ",
+    "description": "Telegram File Renamer Bot 2GB",
+    "logo": "https://telegra.ph/file/a6e66500b646c12ff02e7-54e9395928eb9d92b2.jpg",
+    "keywords": ["Renamer Bot 2gb", "Mongo DB"],    
+    "repository": "https://github.com/Naruto091427/Dokja-",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": "20167916",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org ",
+            "value": "325de70c258003ff1c30fb02077dde25",
+            "required": true
+        },
+        "WEBHOOK": {
+            "description": "if your server is need web service! value = True else value = False",
+            "value": "False",
+            "required": false
+        },
+        "FORCE_SUB": {
+            "description": "Your force sub channel user name without [@] ",
+            "value": "",
+            "required": false 
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": "7214794584:AAFUMB4PuRI6nrkf8Z2TFPCmlFBplaefkbE",
+            "required": true
+        },
+        "ADMIN": {
+            "description":"Add Your User ID multiple is use space to split",
+            "value": "6672752177 7984561417",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description":"Bot Log Sending Channel (just create a private channel and add bot to admin and take channel id to add this variable) ⚠️ id startswith -100 must",
+            "value": "-1002514038289",
+            "required": true          
+        },
+        "DB_URL": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com",
+            "value": "mongodb+srv://Kim_Dokja:yZy4z5ApVHTiXllB@kimdokja.uhxrv.mongodb.net/?retryWrites=true&w=majority&appName=KimDokja",
+            "required": true
+        },
+        "DB_NAME":{ 
+            "description":"Your Mongo DB Database Name ",
+            "value": "Kim_Dokja",
+            "required": false
+        },
+        "START_PIC": {
+            "description": "Your Bot start cmd Pic from @MT_TelegraPH_Bot",
+            "value": "https://telegra.ph/file/ea4b61073bc8df654e149-47acc14a312a245b5a.jpg",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }
+    ]
+}
