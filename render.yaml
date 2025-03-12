@@ -1,31 +1,11 @@
+# Exported from Render on 2025-03-12T21:00:38Z
 services:
-  - type: web
-    plan: free
-    name: Rename Bot 2GB
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
-    repo: https://github.com/Naruto091427/Dokja-
-    branch: main
-    autoDeploy: false
-    envVars:
-      - key: BOT_TOKEN
-        sync: false
-      - key: API_ID
-        sync: false
-      - key: API_HASH
-        sync: false
-      - key: FORCE_SUB
-        sync: false
-      - key: LOG_CHANNEL
-        sync: false
-      - key: DB_NAME
-        sync: false
-      - key: DB_URL
-        sync: false
-      - key: START_PIC
-        sync: false
-      - key: ADMIN
-        sync: false
-      - key: WEBHOOK
-        sync: false
+- type: web
+  name: Kim
+  runtime: python
+  repo: https://github.com/Naruto091427/Kim
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn your_application.wsgi
+version: "1"
