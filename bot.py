@@ -1,3 +1,18 @@
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "I'm alive"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
 from datetime import datetime
 from pytz import timezone
 from pyrogram import Client, __version__
@@ -16,7 +31,7 @@ class Bot(Client):
 
     def __init__(self):
         super().__init__(
-            name="renamer",
+            name="rename",
             api_id=Config.API_ID,
             api_hash=Config.API_HASH,
             bot_token=Config.BOT_TOKEN,
