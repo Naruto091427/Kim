@@ -7,3 +7,7 @@ Pillow
 aiohttp
 pytz
 pyromod
+gunicorn
+flask
+pyrogram
+tgcrypto
